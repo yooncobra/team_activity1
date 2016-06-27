@@ -1,0 +1,127 @@
+/*.file-format.css @github.com/yooncobra/FDS, 2016 */
+
+body {
+  margin: 5% 10%;
+}
+
+
+/*.rest-list 스타일 모듈*/
+.reset-list ul,
+.reset-list ol,
+ul.reset-list,
+ol.reset-list {
+  /*기본적인 리스트 스타일 초기화*/
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+
+/*파일 타입 이미지 제공을 위한 기본 디자인*/
+.lecture-title {
+  font-weight: lighter;
+  font-weight: 200;
+}
+
+.lecture-file-list li {
+  padding-top: 0.26em;
+  padding-bottom: 0.26em;
+}
+
+.lecture-file-list a {
+  display: inline-block;
+  padding-top: 0.25em;
+  font-size: 1.2em;
+  text-decoration: none;
+  text-indent: 1.4em;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*파일 포멧에 따라 자동적으로 아이콘을
+배경 이미지로 설정하는 스타일*/
+a[href$=".ai"] {
+  background-image: url("../images/ai.png");
+  color: #
+}
+
+a[href$=".avi"] {
+  background-image: url("../images/avi.png");
+  color: #
+}
+
+a[href$=".doc"] {
+  background-image: url("../images/doc.png");
+  color: #
+}
+
+a[href$=".gif"] {
+  background-image: url("../images/gif.png");
+  color: #
+}
+
+a[href$=".html"] {
+  background-image: url("../images/html.png");
+  color: #
+}
+
+a[href$=".jpg"] {
+  background-image: url("../images/jpg.png");
+  color: #
+}
+
+a[href$=".mov"] {
+  background-image: url("../images/mov.png");
+  color: #
+}
+
+a[href$=".mp3"] {
+  background-image: url("../images/mp3.png");
+  color: #
+}
+
+a[href$=".mp4"] {
+  background-image: url("../images/mp4.png");
+  color: #
+}
+
+a[href$=".pdf"] {
+  background-image: url("../images/pdf.png");
+  color: #
+}
+
+a[href$=".png"] {
+  background-image: url("../images/png.png");
+  color: #
+}
+
+a[href$=".psd"] {
+  background-image: url("../images/psd.png");
+  color: #
+}
+
+a[href$=".tiff"] {
+  background-image: url("../images/tiff.png");
+  color: #
+}
+
+a[href$=".txt"] {
+  background-image: url("../images/txt.png");
+  color: #
+}
+
+a[href$=".xls"] {
+  background-image: url("../images/xls.png");
+  color: #
+}
+
+a[href^="http://"][target="_blank"] {
+/*배경 이미지*/
+padding-right: 0.56em;
+text-indent: 0;
+background-image: url("../images/external-link.png");
+background-position: 100% 0.13em;
+background-size: 0.5em;
+color: #363636;
+}

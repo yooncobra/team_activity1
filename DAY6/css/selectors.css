@@ -1,0 +1,143 @@
+@charset "utf-8";
+/*! selectors.css @*/
+
+/* CSS 주석 */
+/**
+* --------------------
+* CSS 선택자
+* --------------------
+* 요소 선택자 E
+* 전체 선택자 *
+* 자손 선택자 E(P) E(C)
+* 그룹핑 E,E,E
+*/
+
+/**
+* --------------------
+* 요소 선택자 E
+* 0001
+* --------------------
+*/
+body {
+  margin: 0;
+  /*글자 크기 변경*/
+  font-size: 20px;
+  /*고정 값 px을 상대로 값으로 변경하고자 한다면? emmet 상대값 설정으로 변환:cmd+shft+y */
+  font-size: 1.25em; /* 기본값은 16px 이기 때문에 20px/16px=1.25로 표현된다 */
+}
+
+  /*mt0+mb0*/
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*body안의 모든 것*/
+body * {
+  margin: 0;
+}
+
+/*
+* _____________________________________________
+* 요소 + 그룹핑 + 아이디 + 전체 선택자
+* CSS 선택자는 여러 유형이 조합되어 사용된다.
+* # 아이디 선택자
+* 0100
+*
+* .클래스 선택자
+* 1010
+* _____________________________________________
+*/
+
+body, body * {
+  margin: 0;
+}
+
+혹은
+
+body, .sports * {
+  margin: 0;
+
+혹은
+
+body, #shopping2 * {
+  margin: 0;
+}
+}
+
+이렇게 모든 것을 초기화 하지는 말 것
+* {
+  margin: 0;
+}
+*/
+/*
+* -----------------------------
+* 자식 선택자 E(P) > E(C)
+* > child Combinator
+* -----------------------------
+*  직계 자식을 가리키는 선택자
+*/
+#shopping1 > h4 {
+  color: #7045cf;
+}
+
+/**
+  클래스 선택자
+  E.class-name (디자인 컨셉이 명확하지 않은 경우에는  사용을 자제)
+  .class-name (일반적으로 사용되는 방법, 코드 재사용 목적)
+  .class-name1.class-name2 (멀티 클래스)
+  .class-name1 .class-name2
+
+  */
+
+.notice {}
+.warnig {}
+.error {}
+.success {}
+
+.btn {
+  border::none;
+  background-color: #000;
+  color: #fff;
+}
+
+.btn.btn-buy { color: orange; }
+.btn.btn-cancel-buy { color: lime; }
+
+
+/*
+인접 형제 선택자 E + E
+*/
+
+.parent ul { border: 1px solid red; }
+/*인접 형제 선택자 사용 시, 주의점!
+절대적으로 틀(프레임)이 무너지지 않아야 한다.*/
+.parent h4 + ul { border: none; }
+
+
+/*일반형제 선택자 E ~ E*/
+#shoppingGrpTab > #shopping1 + h3 a { color: darked; }
+#shoppingGrpTab > #shopping1 ~ h3 a { color: #bd8d46; }
+
+
+/*
+속성 선택자
+[attr]
+a[attr="value"]
+*/
+
+/*ID 선택자 = 속성 선택자로 변경  */
+[id] { border: 4px double blue; }
+[classs] { outline: 3px solid rgba(255,255,0,0.5); }
+
+
+/*특정 ID 선택자를 찾고자 한다면?*/
+/*id=10 point, class=100 point*/
+/*#shopping .screen_out {}*/
+속성 선택자는 정규표현식으로 조건을 걸어 확장자를 찾을 수 있다
+[id="shopping3"] [class="screen_out"] {
+  border: 4px solid #303030;
+}
+
+
+
