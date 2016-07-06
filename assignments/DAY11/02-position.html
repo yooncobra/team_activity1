@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>CSS 포지션 속성에 관해 정리</title>
+  <link rel="stylesheet" href="../Resources/font-awesome/font-awesome.min.css">
+  <link rel="stylesheet" href="css/02-position.css">
+</head>
+<body>
+<!--   Static (Default)
+  ralative (기준:self)
+  absolute(기준:offsetParent)
+  offsetParent?
+  자식요소를 포함하는 가장 가까운 부모 요소 중에 position 속성이 static이 아닌 부모 요소
+  relative 일반흐름을 깨지 않는다
+  일반흐름에서 벗어난다
+  자식요소를 포함하는 가장 가까운 부모 요소 중에 position 속성이 static이 아닌 부모요소
+
+  Float과 차이점 ! Float의 경우는 부모요소가 플로트 된 요소를 감싸게 하는 방법이 있지만, absolute의 경우는 별도로 height 높이를 제공해야 한다. -->
+
+  <div class="button-set-movie-control">
+    <button class="button-play" type="button">
+      <span class="fa fa-play"></span>
+      <p>Play</p>
+      </button>
+
+    <button class="button-pause" type="button">
+      <span class="fa fa-pause"></span>
+      <p>Pause</p>
+    </button>
+
+    <button class="button-stop" type="button">
+      <span class="fa fa-stop"></span>
+      <p>Stop</p>
+    </button>
+  </div>
+
+</body>
+</html>
