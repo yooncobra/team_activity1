@@ -1,0 +1,245 @@
+
+/*page-header*/
+.page-header {
+  width: 1280px;
+  height: 192px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #06B1F5;
+}
+
+.page-header::before {
+  display: inline-block;
+  content: '';
+  width: 100%;
+  height: 24px;
+  background: #0493D7;
+}
+
+/*logo */
+.page-header .logo {
+  float: left;
+  margin-top: 24px;
+  margin-left: 60px;
+  width: 220px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background: #18FFFF;
+}
+/*search-bar*/
+.page-header .search-bar {
+  float: left;
+  margin-top: 36px;
+  margin-left: 130px;
+  width: 300px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background: #797A7B;
+}
+/*page-gnb*/
+.page-header .gnb {
+  float: right;
+  margin-top: 36px;
+  margin-right: 20px;
+}
+.page-header .gnb li {
+  float: left;
+  margin-top: 6px;
+  margin-right: 20px;
+}
+.page-header .gnb a {
+  display: block;
+  width: 96px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  background: #2d5683;
+}
+/*.page-header .gnb a:focus {
+  outline: 3px solid #fff;
+  color: #fff
+}*/
+.page-header .gnb a:hover {
+  color: #0c0d0d;
+  background: #bfbfbf;
+}
+/*sub-nav*/
+.page-header .sub-nav {
+  float: left;
+  margin-top: 24px;
+  margin-left: 10px;
+/*  margin-right: 10px;*/
+}
+.page-header .sub-nav li {
+  float: left;
+  margin-right: 20px;
+}
+.page-header .sub-nav a {
+  display: block;
+  width: 280px;
+  height: 48px;
+  line-height: 48px;
+  text-decoration: none;
+  text-align: center;
+  background: #797A7B;
+}
+
+/*-------------------------------*/
+/*page-main*/
+.page-main {
+  width: 1280px;
+  height: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #CCCCCC;
+}
+.page-main .ad {
+  float: left;
+  display: block;
+  width: 700px;
+  height: 96px;
+  line-height: 96px;
+  text-align: center;
+  margin-top: 24px;
+  margin-left: 10px;
+  background: #797A7B;
+}
+.page-main .user-info {
+  float: right;
+  display: block;
+  width: 460px;
+  height: 96px;
+  line-height: 96px;
+  text-align: center;
+  margin-top: 24px;
+  margin-right: 10px;
+  background: #797A7B;
+}
+.page-main .news-section {
+  float: left;
+  display: block;
+  width: 700px;
+  height: 192px;
+  line-height: 168px;
+  text-align: center;
+  margin-top: 24px;
+  margin-left: 10px;
+  background: #797A7B;
+}
+.page-main .highlight {
+  float: right;
+  display: block;
+  width: 460px;
+  height: 192px;
+  line-height: 168px;
+  text-align: center;
+  margin-top: 24px;
+  margin-right: 10px;
+  background: #797A7B;
+}
+
+/*-----------------------------*/
+/*page-channel*/
+.page-channel {
+  position: absolute;
+  transform: translate(320px);
+  margin-right: auto;
+  margin-left: auto;
+  background: #B3B3B3;
+}
+.page-channel [class*="blog"] {
+  float: left;
+  display: block;
+  width: 250px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 12px;
+  background: #797A7B;
+}
+/*page-shopping*/
+.page-shopping {
+  position: absolute;
+  transform: translate(1110px);
+  margin-left: auto;
+  margin-right: auto;
+  background: #999999;
+}
+.page-shopping [class*="shopping"] {
+  float: left;
+  display: block;
+  width: 220px;
+  height: 252px;
+  line-height: 252px;
+  text-align: center;
+  margin-right: 20px;
+  background: #797A7B;
+}
+
+/*--------------------------------*/
+/*page-event*/
+.page-event {
+  position: absolute;
+  transform: translate(320px, 264px);
+  width: 1280px;
+  height: 96px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #CCCCCC;
+}
+.page-event [class*="event"] {
+  float: left;
+  display: block;
+  width: 200px;
+  height: 72px;
+  margin-left: 10px;
+  margin-bottom: 12px;
+  background: #797A7B;
+}
+
+/*-------------------------*/
+/*footer*/
+.page-info {
+  position: fixed;
+  width: 1280px;
+  height: 72px;
+  margin-left: auto;
+  margin-left: auto;
+  background: #0493D7;
+}
+.page-info [class*="footer"] {
+  float: left;
+  display: block;
+  width: 420px;
+  height: 60px;
+  background: #797A7B
+}
+
+/*Common Grid Style Module*/
+.wrapper {
+  width: 1280px;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper-half-left {
+  width: 790px;
+  height: 264px;
+}
+.wrapper-half-right {
+  width: 490px;
+  height: 264px;
+}
+.wrapper-event {
+  width: 1280px;
+  height: 96px;
+}
+.wrapper-footer {
+  width: 1280px;
+  height: 72px;
+}
