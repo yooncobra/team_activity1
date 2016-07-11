@@ -1,0 +1,55 @@
+/*container module*/
+/*1. ëª¨ë“ˆ A. í™”ë©´ í­ ì§€ì • ê°€ìš´ë° ì§€ì • */
+.container {
+  width: 960px;
+  height: 2400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*2.ëª¨ë“ˆ*/
+body.overlay-grid::after {
+  content: '';
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 50%;
+  min-height: 100vh;
+  transform: translateX(-50%);
+}
+
+/*.container.show-grid,
+.container.hover-hide-grid {
+  background: url("./images/GS-pattern-10-60-10.png");
+}*/
+
+body.overlay-grid::after,
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.overlay-grid::after, .container.overlay-grid, .container.hover-hide-grid:hover {
+  background: none;
+}
+/*ê·¸ë¦¬ë“œ ë¡œìš°(Row) ëª¨ë“ˆ
+clearfix ìœ ì‚¬*/
+.row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*ê·¸ë¦¬ë“œ ì»¬ëŸ¼ ëª¨ë“ˆ*/
+/*.col {
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+[class*="col-"]{
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
