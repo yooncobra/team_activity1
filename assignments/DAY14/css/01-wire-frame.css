@@ -199,6 +199,7 @@
   margin-left: 10px;
   margin-bottom: 12px;
   background: #797A7B;
+  overflow: hidden;
 }
 
 /*-------------------------*/
@@ -216,7 +217,7 @@
   display: block;
   width: 420px;
   height: 60px;
-  background: #797A7B
+  background: #797A7B;
 }
 
 /*Common Grid Style Module*/
