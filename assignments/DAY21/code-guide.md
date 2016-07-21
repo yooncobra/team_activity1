@@ -7,26 +7,31 @@ Sytax
 Always use double quotes.
 
 ###HTML5 doctype at the beginnig of every HTML page.
-<!DOCTYPE html>
-<html>
-  <head>
-  </head>
-</html>
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+    </head>
+  </html>
 
 ###Language attribute
-<html lang="en-us">
-  <!-- ... -->
-</html>
+
+  <html lang="en-us">
+    <!-- ... -->
+  </html>
 
 ###IE compatibility mode
+
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
 ###Character encoding
+
   <head>
     <meta charset="UTF-8">
   </head>
 
 ###CSS and JavaScript includes
+
   <!-- External CSS -->
     <link rel="stylesheet" href="code-guide.css">
 
@@ -96,6 +101,7 @@ Syntax
 >
 >Positioning comes first because it can remove an element from the normal flow of the document and override box model related styles. The box model comes next as it dictates a component's dimensions and placement.
 >Everything else takes place inside the component or without impacting the previous two sections, and thus they come last.
+
   .declaration-order {
     /* Positioning */
     position: absolute;
