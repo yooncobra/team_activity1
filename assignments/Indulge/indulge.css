@@ -2,7 +2,12 @@
 /*indurge.css @yooncobra, 2016*/
 
 /*배경 이미지 넣기*/
+<<<<<<< HEAD
 body { background-image: url("Indulge/body.png");background-size: contain;
+=======
+body { background-image: url("body.png");
+  background-size: contain;
+>>>>>>> origin/gh-pages
   background-repeat: no-repeat;
   font-family: 'Lato', sans-serif;
   }
@@ -65,7 +70,11 @@ header .main-img {
 
 /*footer area*/
 footer {
+<<<<<<< HEAD
   background-image: url("Indulge/footer/bg.png");
+=======
+  background-image: url("footer/bg.png");
+>>>>>>> origin/gh-pages
   background-size: cover;
   background-repeat: no-repeat;
   padding: 58px 47px;
