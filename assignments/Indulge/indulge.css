@@ -1,0 +1,102 @@
+@charset "utf-8";
+/*indurge.css @yooncobra, 2016*/
+
+/*배경 이미지 넣기*/
+body { background-image: url("body.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: 'Lato', sans-serif;
+  }
+
+/*.wrapper {
+  width: 100%;
+}*/
+
+
+/*header의 logo 작성*/
+header .main-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-bottom: 58px;
+}
+/*navigation button*/
+.clearfix {
+  clear: both;
+}
+.nav {
+  float: left;
+  width: 89vw;
+  margin-left: 5.5vw;
+  border-top: 1px solid #737680;
+}
+.nav [class*="nav-button"] {
+  width: 11.11vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*cta area*/
+.indulge-cta .wrapper {
+  display: block;
+  width: 162px;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.indulge-cta .comment-1 {
+  font-weight: 100;
+}
+
+.indulge-cta span {}
+
+/*content area*/
+.content-container {
+
+}
+
+.content-container [class*="content-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*footer area*/
+footer {
+  background-image: url("footer/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 58px 47px;
+
+}
+
+/*sub-logo image*/
+footer .sub-img {
+  display: block;
+  width: 142px;
+  height: 41px;
+  margin-top: 56px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*SNS icons*/
+footer .sns-icon {
+  float: left;
+  display: inline-block;
+  height: 50px;
+}
+.sns-icon>a {
+  width: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
